@@ -15,6 +15,7 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    android:background="@drawable/rapball"
     tools:context=".MainActivity">
 
     <LinearLayout
@@ -23,7 +24,7 @@
         android:orientation="horizontal">
 
         <LinearLayout
-            android:layout_width="0dp"
+            android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:layout_weight="1"
             android:orientation="vertical">
@@ -34,7 +35,7 @@
                 android:fontFamily="sans-serif-medium"
                 android:gravity="center"
                 android:padding="16dp"
-                android:text="Atlanta Falcons"
+                android:text="Lyrical Beast"
                 android:textColor="#616161"
                 android:textSize="14sp" />
 
@@ -56,6 +57,7 @@
                 android:layout_marginLeft="24dp"
                 android:layout_marginRight="24dp"
                 android:onClick="addThreeForTeamA"
+                android:textColor="#FF9800"
                 android:text="+3 Points" />
 
             <Button
@@ -65,6 +67,7 @@
                 android:layout_marginLeft="24dp"
                 android:layout_marginRight="24dp"
                 android:onClick="addTwoForTeamA"
+                android:textColor="#FF9800"
                 android:text="+2 Points" />
 
             <Button
@@ -74,6 +77,7 @@
                 android:layout_marginLeft="24dp"
                 android:layout_marginRight="24dp"
                 android:onClick="addOneForTeamA"
+                android:textColor="#FF9800"
                 android:text="Free throw" />
         </LinearLayout>
 
@@ -84,7 +88,7 @@
             android:background="@android:color/darker_gray" />
 
         <LinearLayout
-            android:layout_width="match_parent"
+            android:layout_width="0dp"
             android:layout_height="wrap_content"
             android:layout_weight="1"
             android:orientation="vertical">
@@ -95,7 +99,7 @@
                 android:fontFamily="sans-serif-medium"
                 android:gravity="center"
                 android:padding="16dp"
-                android:text="Dallas Cowboys"
+                android:text="Trap Boyz"
                 android:textColor="#616161"
                 android:textSize="14sp" />
 
@@ -117,6 +121,7 @@
                 android:layout_marginLeft="24dp"
                 android:layout_marginRight="24dp"
                 android:onClick="addThreeForTeamB"
+                android:textColor="#FF0000"
                 android:text="+3 Points" />
 
             <Button
@@ -126,6 +131,7 @@
                 android:layout_marginLeft="22dp"
                 android:layout_marginRight="22dp"
                 android:onClick="addTwoForTeamB"
+                android:textColor="#FF0000"
                 android:text="+2 Points" />
 
             <Button
@@ -135,16 +141,21 @@
                 android:layout_marginLeft="22dp"
                 android:layout_marginRight="22dp"
                 android:onClick="addOneForTeamB"
+                android:textColor="#FF0000"
                 android:text="Free throw" />
         </LinearLayout>
     </LinearLayout>
-
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" />
+        android:src="@mipmap/@rapball"
     <Button
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_alignParentBottom="true"
         android:layout_centerHorizontal="true"
         android:layout_marginBottom="32dp"
+        android:background="@android:color/holo_orange_dark"
         android:onClick="resetScore"
         android:text="Reset" />
 
